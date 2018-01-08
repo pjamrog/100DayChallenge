@@ -9,7 +9,6 @@ surname = ["Nowak", "Wójcik", "Kowalczyk", "Woźniak", "Mazur", "Krawczyk", "Ka
 
 
 choose = input("Please choose which name do you want to generate - (F)emale or (M)ale?")
-while True:
 
 if choose == "F":
   female_ns = random.choice(names) + " " + random.choice(surname)

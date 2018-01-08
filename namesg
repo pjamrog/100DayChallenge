@@ -3,23 +3,20 @@ import random
 # Lista imion
 names = ["Julia", "Zuzanna", "Maja", "Zofia", "Lena", "Hanna", "Amelia", "Alicja", "Aleksandra", "Oliwia"]
 namesm = ["Antoni", "Jakub", "Jan", "Szymon", "Franciszek", "Filip", "Aleksander", "Wojciech", "Kacper", "Mikołaj", "Adam"]
-
 surname = ["Nowak", "Wójcik", "Kowalczyk", "Woźniak", "Mazur", "Krawczyk", "Kaczmarek", "Zając", "Król", "Wieczorek"]
-
-
 
 choose = input("Please choose which name do you want to generate - (F)emale or (M)ale?")
 
-if choose == "F":
-  female_ns = random.choice(names) + " " + random.choice(surname)
-  print(female_ns)
-  
-elif choose == "M":
-  male_ns = random.choice(namesm) + " " + random.choice(surname)
-  print(male_ns)
-  
-else:
-  print("Uuuups! You did something wrong! Please choose F or M.")
+while True:
+  if choose == "F":
+    female_ns = random.choice(names) + " " + random.choice(surname)
+    print(female_ns)  
+  elif choose == "M":
+    male_ns = random.choice(namesm) + " " + random.choice(surname)
+    print(male_ns)  
+    break
+  else:
+    choose = input("Uuuups! You did something wrong! Please choose F or M.")
   
   
 

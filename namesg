@@ -15,7 +15,7 @@ if choose == "F":
   print(female_ns)
   
 elif choose == "M":
-  male_ns = random.choice(namesm) + " "+ random.choice(surname)
+  male_ns = random.choice(namesm) + " " + random.choice(surname)
   print(male_ns)
   
 else:

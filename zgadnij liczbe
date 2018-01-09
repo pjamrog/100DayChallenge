@@ -1,4 +1,5 @@
-#Higher/Lower - gra, w której użytkownik zgaduje liczbę, a komputer mu podpowiada, czy liczba jest większa od podanej czy mniejsza. Określamy w jakim przedziale ma być ta liczba i ile rund ma toczyć się gra.
+#Higher/Lower - gra, w której użytkownik zgaduje liczbę, a komputer mu podpowiada, czy liczba jest większa od podanej czy mniejsza.
+#Określamy w jakim przedziale ma być ta liczba i ile rund ma toczyć się gra.
 
 
 import random
@@ -15,16 +16,16 @@ while True:
     print("Great! Let's do it!")
     break
   elif user_choice == "N":
-    print("We are so sorry that you want finish our game :( ")
+    print("We are so sorry that you want to finish our game :( ")
     exit()
   else:
     print("Sorry! There were mistake. Try again. Y/N.")
  
 pc_number=random.randrange(min_number, max_number)
 
-#game
+
 for n in range(1, rounds+1):
-  print("It's your %d rounds from %d." %(n,rounds))
+  print("It's your %d rounds from %d." %(n, rounds))
   user_number = int(input("What is your choice?:"))
   if user_number > pc_number:
     print("Oh no! You put on too big number. Please choose lower!")

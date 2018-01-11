@@ -1,3 +1,6 @@
+#Age in Seconds - oblicz swój wiek w sekundach. Tu przydatne będzie zaimportowanie date z modułu datetime. Pewnym utrudnieniem (chyba) 
+jest poproszenie, aby użytkownik wpisał date swoich urodzin.
+
 from datetime import datetime, time
 
 user_date = input("Please write your date of birthday (YYYY-MM-DD):")
@@ -18,6 +21,7 @@ user_brithday = datetime.strptime(user_date, '%Y-%m-%d')
 #Current date
 now_date = datetime.now()
 
-print("You live for \n%d days, %d hours, %d minutes, %d seconds" % dhms_from_seconds(date_diff_in_seconds(now_date, user_brithday)))
+print("You are %d days, %d hours, %d minutes, %d seconds old :)" % dhms_from_seconds(date_diff_in_seconds(now_date, user_brithday)))
 
-print("You live since \n%d seconds" %(date_diff_in_seconds(now_date, user_brithday)))
+print("You are %d seconds old!" %(date_diff_in_seconds(now_date, user_brithday)))
+

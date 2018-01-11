@@ -1,0 +1,14 @@
+temp = input("Please enter the temperature. (f.e. 10C or 100F) : ")
+degree = int(temp[:-1])
+degree_n = temp[-1]
+
+if degree_n.upper() == "C":
+  result = int(round((9 * degree) / 5 + 32))
+  degree_e = "Fahrenheit"
+elif degree_n.upper() == "F":
+  result = int(round((degree - 32) * 5 / 9))
+  degree_e = "Celscius"
+else:
+  print("Sorry! You put on wrong temperature format.")
+  
+print("The temperature in", degree_e, "is", result,".")

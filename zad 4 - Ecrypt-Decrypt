@@ -2,7 +2,7 @@
 
 def code():
     jedne = "qwertyuiaop9ms51@$l^k{"
-    drugie = "lkjhxgfdsbanfv874!#m&}"
+    drugie = "{k^l$@15sm9poaiuytrewq"
 
     kodowanie = "".maketrans(jedne, drugie)
     odkodowanie = "".maketrans(jedne, drugie)

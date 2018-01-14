@@ -1,0 +1,25 @@
+# Encrypt / Decrypt Algorith
+
+def code():
+    jedne = "qwertyuiaop9ms51@$l^k{"
+    drugie = "lkjhxgfdsbanfv874!#m&}"
+
+    kodowanie = "".maketrans(jedne, drugie)
+    odkodowanie = "".maketrans(jedne, drugie)
+
+    while True:
+        co_robic = input("Co chcesz zrobić? Zaszyfrować (1), odszyfrować(2) czy wyjść(3) ?")
+        if co_robic == "1":
+            szyfruj = input("Napisz wiadomość którą chcesz zaszyfrować.\n")
+            print("To jest Twoja zakadowana wiadomość:\n", szyfruj.translate(kodowanie))
+        elif co_robic == "2":
+            szyfruj = input("Napisz wiadomość, którą chcesz odkodować\n")
+            print("To jest Twoja odszyfrowana wiadomość:\n", szyfruj.translate(odkodowanie))
+        elif co_robic == "3":
+            exit()
+        else:
+            print("Coś źle poszło...")
+            
+            
+code()
+            

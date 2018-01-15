@@ -1,0 +1,45 @@
+import random
+
+
+
+rounds = int(input("Hi! This is Rock-Paper-Scissors game!\n"
+"How many times do you want to play?"))
+game = ["rock", "paper", "scissors"]
+
+
+for i in range(rounds):
+    your_choice = (input("Enter your choice (rock, paper, scissors)"))
+    print("You choose: ", your_choice)
+
+    if your_choice == random.choice(game):
+        print("Round end in a draw.")
+        print(rounds - i - 1, "rounds left\n")
+
+    elif your_choice == "rock" and random.choice(game) == "paper":
+        print("Sorry! You lost this round...")
+        print(rounds - i - 1, "rounds left\n")
+
+    elif your_choice == "rock" and random.choice(game) == "scissors":
+        print("Great! You win this round!")
+        print(rounds - i - 1, "rounds left\n")
+
+    elif your_choice == "paper" and random.choice(game) == "scissors":
+        print("Sorry! You lost this round...")
+        print(rounds - i - 1, "rounds left\n")
+
+    elif your_choice == "paper" and random.choice(game) == "rock":
+        print("Great! You win this round!")
+        print(rounds - i - 1, "rounds left\n")
+
+    elif your_choice == "scissors" and random.choice(game) == "rock":
+        print("Sorry! You lost this round...")
+        print(rounds - i - 1, "rounds left\n")
+
+    elif your_choice == "scissors" and random.choice(game) == "paper":
+        print("Great! You win this round!")
+        print(rounds - i - 1, "rounds left\n")
+
+    else:
+        print("Sorry! You lost your turn. You can try again.")
+
+exit()

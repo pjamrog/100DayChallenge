@@ -1,7 +1,10 @@
 import random
 
 
-questions = ["it's certain","it's decidedly", "Without a doubt", "Yes definitely","You may rely on it", "As I see it, yes","Most likely", "Outlook good", "Yes", "Signs point to yes0", "Reply hazy try again","Ask again leter", "Better not tell you now", "Cannot predict now", "Concentrate and ask again", "Don't count on it","My reply is no","My sources say no","Outlook not so good","Very doubtful"]
+questions = ["it's certain","it's decidedly", "Without a doubt", "Yes definitely",
+"You may rely on it", "As I see it, yes","Most likely", "Outlook good", "Yes", "Signs point to yes0", 
+"Reply hazy try again","Ask again leter", "Better not tell you now", "Cannot predict now", "Concentrate and ask again", 
+"Don't count on it","My reply is no","My sources say no","Outlook not so good","Very doubtful"]
 
 
 print("Are you ready? Prepare your questions and answer for them should be only Yes or No.\n")

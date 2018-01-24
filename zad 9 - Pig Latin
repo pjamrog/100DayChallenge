@@ -1,0 +1,18 @@
+spolgloski = "zxcvbnmsdfghjklqwrtp"
+samogloski = "aeyuio"
+
+print("Let's play in Pig Latin!")
+your_word = input("What is your word?: ")
+
+pig = "ay"
+latin = "way"
+
+if len(your_word) > 0 and your_word.isalpha():
+  your_word.lower()
+  first = your_word[0]
+  if first in spolgloski:
+    nowe = your_word[1:] + your_word[0] + pig
+    print(nowe)
+  elif first in samogloski:
+    nowy = your_word + latin
+    print(nowy)

@@ -1,0 +1,15 @@
+
+
+your_word = input("Enter your word: ")
+lenght = len(your_word)
+wordh_lenght = len(str.split(your_word))
+digit = 0
+for i in your_word:
+    if(i.isdigit()):
+        digit = digit + 1
+
+
+
+print("Your sentence has:", lenght, "characters.")
+print("There is: ", wordh_lenght, "words.")
+print("Your sentence has: ", digit, "digits.")

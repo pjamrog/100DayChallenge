@@ -2,8 +2,6 @@
 # Uczestnicy zabawy liczą po kolei od 1 do (np) 100.
 # Słowem Fizz zastępują każdą kolejną liczbę podzielną przez 3, a słowem Buzz każdą kolejną liczbę podzielną przez 5.
 
-import random
-
 runda = int(input("Wpisz ile razy chcesz podawać liczbę: "))
 
 for i in range(runda):

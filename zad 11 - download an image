@@ -1,4 +1,5 @@
 import urllib.request
+import os
 
 def dl_jpg(url, file_path, file_name):
     full_path = file_path + file_name + ".jpg"
@@ -6,5 +7,7 @@ def dl_jpg(url, file_path, file_name):
 
 url = input("Enter img URL to download:")
 file_name = input("Enter file name to save as:")
+
+os.mkdir("images")
 
 dl_jpg(url, "images/", file_name)

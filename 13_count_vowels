@@ -12,6 +12,6 @@ for c in op_file.read():
     if c in vowels:
         count_v += 1
     elif c in cons:
-        count_v += 1
+        count_c += 1
 
 print("The number of vowels is: ",count_v,"\nThe number of consonants is: ",count_c)

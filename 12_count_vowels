@@ -1,0 +1,17 @@
+my_file = input("Enter the file to check: ").strip()
+
+op_file = open(my_file, "r")
+
+
+vowels = set("AEIOUaeiou")
+cons = set("bcdfghjklmnpqrstvwxyzBCDFGHJKLMNPQRSTVWXYZ")
+
+count_v = 0
+count_c = 0
+for c in op_file.read():
+    if c in vowels:
+        count_v += 1
+    elif c in cons:
+        count_v += 1
+
+print("The number of vowels is: ",count_v,"\nThe number of consonants is: ",count_c)

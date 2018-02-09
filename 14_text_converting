@@ -1,0 +1,28 @@
+my_file = input("Enter your file to convert: ")
+
+def text_converting(file, align, line_length):
+    if align == "r":
+        pattern = "{:>"
+    elif align == "l":
+        pattern = "{:"
+    elif align == "c":
+        pattern = "{:^"
+    pattern = pattern + str(line_length) + "}"
+    
+    text = open(file, "r")
+    for line in text:
+        mappingSpaces = []
+        start = 0
+        while len(line) > line_length:
+            p = line[:line_length].rfind(" ")
+            print(pattern.format(line[:p]))
+            line = line[p + 1:]
+        else:
+            print(pattern.format(line))
+    text.close()
+
+def main():
+    text_converting(my_file, "c", 45)
+
+if __name__ == '__main__':
+    main()

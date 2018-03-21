@@ -1,1 +1,1 @@
-# namesgenr
+only exercises

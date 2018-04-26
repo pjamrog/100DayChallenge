@@ -1,1 +1,1 @@
-only exercises
+Simple Python exercises.
